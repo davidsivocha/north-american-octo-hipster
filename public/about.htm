@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Nikita Belousov" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Simple Tape | About</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+</head>
+
+<body id="home">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li class="current"><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+</ul>
+
+<a title="Back to home" href="index.htm"><img alt="SimpleTipe" class="logo" src="img/logo.png" /></a>
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+
+    <h1 class="about">We are a creative development team</h1>
+    
+    <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet,
+    consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet scelerisque 
+    enim eget rhoncus. Vestibulum sagittis euismod tortor, id fringilla libero 
+    sollicitudin a. Morbi auctor est tempor odio pharetra nec dignissim quam tempor.</p>
+    
+    <div class="our_team">
+        
+        <h3>Our team:</h3>
+        
+        <div class="member">
+        <img alt="Alexandr" src="img/team/about/1.png" />
+        
+        <div class="team_info">
+        
+        <h2>Alexandr Titov</h2>
+        <h4>PHP developer</h4>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, 
+        consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet 
+        scelerisque enim eget rhoncus.</p>
+        
+        </div>
+    
+        </div>
+        
+        <div class="member last_img">
+        <img alt="Maria" src="img/team/about/2.png" />
+        
+        <div class="team_info">
+        
+        <h2>Maria Zlashuk</h2>
+        <h4>Creative designer</h4>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, 
+        consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet 
+        scelerisque enim eget rhoncus.</p>
+        
+        </div>
+        
+        </div>
+        
+        <div class="member">
+        <img alt="Vladislav" src="img/team/about/3.png" />
+        
+        <div class="team_info">
+        
+        <h2>Vladislav Skvortcov</h2>
+        <h4>SEO consultant</h4>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, 
+        consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet 
+        scelerisque enim eget rhoncus.</p>
+        
+        </div>
+        
+        </div>
+        
+        <div class="member last_img">
+        <img alt="Evgeniy" src="img/team/about/4.png" />
+        
+        <div class="team_info">
+        
+        <h2>Evgeniy Calistov</h2>
+        <h4>Client manager</h4>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, 
+        consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet 
+        scelerisque enim eget rhoncus.</p>
+        
+        </div>
+        
+        </div>
+
+        
+    </div>
+    
+    
+    
+<div id="footer">
+    &#169; Simple Tape 2012 All rights reserved.
+    
+    <ul class="footer_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li class="current"><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

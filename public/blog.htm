@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Nikita Belousov" />
+    
+    <!--[if Internet Explorer]>
+    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Simple Tape | Blog</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/input_clear.js"></script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+    
+</head>
+
+<body id="view_work">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li class="current"><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+</ul>
+
+<a title="Back to home" href="index.htm"><img alt="SimpleTape" class="logo" src="img/logo.png" /></a>
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+
+    <div id="about_page">
+
+    <h2 class="title_blog">Welcome to our blog</h2>
+    
+    <p class="blog_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet,
+    consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet scelerisque 
+    enim eget rhoncus. Duis lectus odio, semper eu ultricies sit amet,
+    consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet scelerisque 
+    enim eget rhoncus.</p>
+    
+    </div>
+
+    <div id="blog_content">
+    
+    <div id="sidebar">
+        <h3>Please select a category:</h3>
+        
+        <ul class="menu_cat">
+            <li><h2 class="category_list">Design</h2>
+            
+                <ul class="show_list">
+                    <li><a>Inspiration</a></li>
+                    <li><a>Photography</a></li>
+                    <li><a>Web-design</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><h2 class="category_list">Tutorials</h2>
+            
+                <ul class="show_list">
+                    <li><a>Photoshop</a></li>
+                    <li><a>Illustrator</a></li>
+                    <li><a>PHP tricks</a></li>
+                    <li><a>HTML + CSS</a></li>
+                    <li><a>Java Script</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><h2 class="category_list">Work Awersome</h2>
+            
+                <ul class="show_list">
+                    <li><a>Office work</a></li>
+                    <li><a>Your workplace</a></li>
+                    <li><a>Useful habits</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><h2 class="category_list">Offline</h2>
+            
+                <ul class="show_list">
+                    <li><a>Healthy Life</a></li>
+                    <li><a>Relationships with people</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><h2 class="category_list">Freebie</h2>
+            
+                <ul class="show_list">
+                    <li><a>Fonts</a></li>
+                    <li><a>PSD templates</a></li>
+                    <li><a>Wallpapers</a></li>
+                    <li><a>Icons</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+    
+        <h3 class="blog_search">Search:</h3>
+        
+        <input type="text" class="autoclear" name="search" value="Search the blog" />
+        
+        <h3 class="sponsors">Sponsors:</h3>
+        
+        <div class="sponsor_img">
+            <img alt="sponsor" src="img/sponsors/1.png" />
+            <img alt="sponsor" class="last_img" src="img/sponsors/1.png" />
+            <img alt="sponsor" src="img/sponsors/1.png" />
+            <img alt="sponsor" class="last_img"  src="img/sponsors/1.png" />
+        </div>
+        
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">10 New Clean &#38; Minimalist Websites to Inspire You</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Inspiration</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/1.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">21 Inspiring Examples of Dark Colors in Web Design</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Inspiration</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/2.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">Effects of Information Overload &#38; How to Deal with it</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Useful habits</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/3.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">Quick Tutorial: Create a Reusable Retro Type Treatment</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Photoshop</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/4.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">How to Forgive</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Office work</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/5.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <div class="view_post">
+        <h1><a class="transition" href="view_post.htm">15 Icon Design Photoshop Tutorials</a></h1>
+        <h4>Posted by: <a>Nikita Belousov</a> on Jan 23, 2012 Located in: <a>Tutorials</a></h4>
+        
+        <a class="transition" href="view_post.htm"><img alt="post img" class="post_img" src="img/blog/6.png" /></a>
+        
+        <p>Quisque eu metus leo, ac gravida quam. Sed mollis justo nec felis 
+        vulputate malesuada. Vestibulum sed nulla mi. Duis iaculis mollis mi, 
+        non porttitor ipsum consequat non. Aenean in risus dolor, vel blandit 
+        massa. Proin nibh odio, vestibulum eget egestas vulputate, sollicitudin quis justo. <a class="transitional" href="view_post.htm">Read more..</a></p>
+    </div>
+    
+    <a class="older">&#8592; Older posts</a>
+
+    </div>
+      
+<div id="footer">
+    &#169; Simple Tape 2012 All rights reserved.
+    
+    <ul class="footer_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li class="current"><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

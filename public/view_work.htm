@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Nikita Belousov" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Simple Tape | SimpleTape: Minimalistic Site Template</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+        
+</head>
+
+<body id="view_work">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li class="current"><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+</ul>
+
+<a title="Back to home" href="index.htm"><img alt="SimpleTape" class="logo" src="img/logo.png" /></a>
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+
+    <h1 class="title_work">SimpleTape: Minimalistic Site Template</h1>
+
+    <div class="view_work">   
+        <div class="title_img"><img alt="Work Name Here" src="img/portfolio/works/1.png" /></div>
+        
+        <div class="work_info_text">
+        <h3>Work info:</h3>
+        <h4>Client: <a target="_blank" href="http://themeforest.net/">www.anysite.net</a></h4>
+        <h4>Tools: <a>HTML+CSS</a>, <a>Photoshop CS5</a>, <a>CSS3</a>, <a>JQuery</a></h4>
+        
+        <div class="description">
+        <h4 class="description">DESCRIPTION:</h4>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, 
+        consectetur vel nunc. Nam gravida diam sapien. 
+        Nullam aliquet scelerisque enim eget rhoncus. <a href="portfolio.htm">View all work..</a></p>
+        </div>
+        </div>
+    
+    </div>
+      
+<div id="footer">
+    &#169; Simple Tape 2012 All rights reserved.
+    
+    <ul class="footer_navi">
+        <li><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li class="current"><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+    </ul>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

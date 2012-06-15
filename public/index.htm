@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Nikita Belousov" />
+    
+    <!--[if Internet Explorer]>
+    <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    
+	<title>Simple Tape | Home</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/input_clear.js"></script>
+    
+    <!-- Lightbox -->
+    <script type="text/javascript">
+    $(function() {
+        $('.latest_gallery a').lightBox();
+    });
+    </script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+    $(function() { 
+    $('.main_content, .main_navi').hide(); 
+    $(window).load( function() {  
+    $('#loader').fadeOut();
+    $('.main_content, .main_navi').fadeIn(2000); 
+    } );
+    } );
+                        
+    $(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+    });
+    </script>
+    
+</head>
+
+<body id="home">
+<div id="container">
+
+    <div class="stripe"></div>
+
+<div id="content">
+
+<!-- Header -->
+
+<div id="header">
+
+<div id="loader"><img alt="Loading.." src="img/ajax-loader.gif" /></div>
+
+<ul class="main_navi">
+        <li class="current"><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+</ul>
+
+<img alt="SimpleTape" class="logo" src="img/logo.png" />
+
+</div>
+
+
+
+<!-- Top Content -->
+<div class="main_content">
+<div id="top_content">
+
+    <div class="latest_gallery">    
+        <h2>Latest from the gallery</h2>
+        <div class="latest_img"><a href="img/lightbox/latest_gallery/1.jpg"><img alt="Any image text" src="img/from_gallery/1.png" /></a></div>
+        <div class="latest_img"><a href="img/lightbox/latest_gallery/2.jpg"><img alt="Any image text" src="img/from_gallery/2.png" /></a></div>
+        <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/3.jpg"><img alt="Any image text" src="img/from_gallery/3.png" /></a></div>
+        
+        <div class="latest_img"><a href="img/lightbox/latest_gallery/4.jpg"><img alt="Any image text" src="img/from_gallery/4.png" /></a></div>
+        <div class="latest_img"><a href="img/lightbox/latest_gallery/5.jpg"><img alt="Any image text" src="img/from_gallery/5.png" /></a></div>
+        <div class="latest_img last_img"><a href="img/lightbox/latest_gallery/6.jpg"><img alt="Any image text" src="img/from_gallery/6.png" /></a></div>
+    </div> 
+    
+<div class="main_img">
+
+    <a class="transition" href="view_work.htm"><img alt="This is home image" src="img/main_img1.png" /></a>
+    
+</div> 
+
+</div>
+
+
+
+<!-- Our best work -->
+
+<div id="best_work">
+
+    <div class="best_work">
+    <h3>Our best work</h3>
+    
+    <div><a class="transition" href="view_work.htm"><img alt="Best work" src="img/best_work/1.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div><a class="transition" href="view_work.htm"><img alt="Best work" src="img/best_work/2.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div class="last_img"><a class="transition" href="view_work.htm"><img alt="Best work" src="img/best_work/3.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div><a href="view_work.htm"><img alt="Best work" class="transition" src="img/best_work/4.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div><a class="transition" href="view_work.htm"><img alt="Best work" src="img/best_work/5.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    <div class="last_img"><a class="transition" href="view_work.htm"><img alt="Best work" src="img/best_work/6.png" /></a>
+        <a class="transition" href="view_work.htm"><img alt="Best work" class="view" src="img/linz.png" /></a>
+    </div>
+    
+    </div>
+    
+
+    
+</div>
+
+<!-- How to Contact Us, What we do -->
+
+<div id="info">
+
+    <div class="info_item float">
+        <h3>How to Contact Us</h3>
+        <p>Nulla sed justo vitae eros euismod volutpat. 
+        Mauris in fermentum justo. Vivamus in risus metus, nec rhoncus arcu. 
+        Sed eleifend laoreet elit sed viverra. Vivamus ornare mattis interdum. 
+        Integer convallis placerat aliquam. 
+        Vivamus id leo eget nunc lacinia pulvinar sit amet id nibh. <a class="transitional" href="contacts.htm">See more..</a></p>
+    </div>
+    
+
+    <div class="info_item">
+        <h3>What we do</h3>
+        <p>Nulla sed justo vitae eros euismod volutpat. 
+        Mauris in fermentum justo. Vivamus in risus metus, nec rhoncus arcu. 
+        Sed eleifend laoreet elit sed viverra. Vivamus ornare mattis interdum. 
+        Integer convallis placerat aliquam. 
+        Vivamus id leo eget nunc lacinia pulvinar sit amet id nibh. <a class="transitional" href="about.htm">See more..</a></p>      
+    </div>
+
+    
+</div>
+
+<!-- Latest on the blog -->
+
+<div id="latest_blog">
+<h3>Latest on the blog</h3>
+
+    <div class="post">
+        
+    <div class="info_item float">
+        <h3><a class="transition" href="view_post.htm">10 New Clean &#38; Minimalist Websites to Inspire You</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus malesuada adipiscing metus, tristique blandit lorem aliquam id. 
+        Maecenas id nibh non libero viverra placerat. Proin at elit lectus. 
+        Donec quis lacus eros. <a class="transitional" href="contacts.htm">Read more..</a></p>
+    </div>
+    
+    <a class="transition" href="view_post.htm"><img src="img/latest_blog/1.png" title="View post" alt="Different design ideas"/></a>
+        
+    </div>
+
+    <div class="post">
+        
+    <div class="info_item float">
+        <h3><a class="transition" href="view_post.htm">The solar output and design.</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus malesuada adipiscing metus, tristique blandit lorem aliquam id. 
+        Maecenas id nibh non libero viverra placerat. Proin at elit lectus. 
+        Donec quis lacus eros. <a class="transitional" href="contacts.htm">Read more..</a></p>
+    </div>
+    
+    <a class="transition" href="view_post.htm"><img src="img/latest_blog/2.png" title="View post" alt="The solar output and design"/></a>
+
+    </div>
+
+</div>
+
+<!-- Social -->
+
+<div id="social">
+    
+    <div class="follow_team">
+        <h3>Follow our team</h3>
+        <div class="team_preview">
+            <div><a><img src="img/team/home/1.png" title="PHP developer" alt="Alexander"/></a><br />
+                 <span>Alexander</span>
+            </div>
+            
+            <div><a><img src="img/team/home/2.png" title="Creative designer" alt="Maria"/></a><br />
+                 <span>Maria</span>
+            </div>
+            
+            <div ><a><img src="img/team/home/3.png" title="SEO consultant" alt="Vladislav"/></a><br />
+                  <span>Vladislav</span>
+            </div>
+            
+            <div class="last_img"><a><img src="img/team/home/4.png" title="Client manager" alt="Evgeniy"/></a><br />
+                  <span>Evgeniy</span>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    
+    <div class="subscription">
+        <h3>Subscription</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Vivamus malesuada adipiscing metus, tristique blandit lorem aliquam id. </p>
+        
+        <form method="post" action="">
+        
+        <input class="autoclear" type="text" size="15" name="name" value="Your name" />
+        <input class="autoclear" type="text" size="15" name="mail" value="E-mail adress" />
+        <input type="submit" name="subscribe" value="Subscribe" />
+        
+        </form>
+        
+    </div>
+    
+</div>
+
+
+
+<div id="footer">
+    &#169; Simple Tape 2012 All rights reserved.
+    
+    <ul class="footer_navi">
+        <li class="current"><a class="transition" href="index.htm">Home</a></li>
+        <li><a class="transition" href="about.htm">About</a></li>
+        <li><a class="transition" href="portfolio.htm">Portfolio</a></li>
+        <li><a class="transition" href="blog.htm">Blog</a></li>
+        <li><a class="transition" href="contacts.htm">Contacts</a></li>
+    </ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
