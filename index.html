@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="North-American-Octo-Hipster : A NodeJS Webserver at 1kb in size." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>North-American-Octo-Hipster</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/davidsivocha/north-american-octo-hipster">View on GitHub</a>
+
+          <h1 id="project_title">North-American-Octo-Hipster</h1>
+          <h2 id="project_tagline">A NodeJS Webserver at 1kb in size.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/davidsivocha/north-american-octo-hipster/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/davidsivocha/north-american-octo-hipster/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>North-American-Octo-Hipster</h1>
+
+<p><em>I loved the stupid suggestion title that GitHub gave me so much that I just had to use it</em></p>
+
+<p>Uses NodeJS to make a command line server that can serve static files only. Includes a bundled copy of Node.exe which is portable Node for windows. The entire application runs out of the server.js file and weighs in at only 1kb of code and under 5mb with the included node executable.</p>
+
+<p>To use either drag the server.js files onto node.exe or from the command line run using <code>node server.js</code></p>
+
+<p>The default port that the server runs on is <code>8888</code>. To change this, edit the <code>server.js</code> file in your favourite text editor and on line 5 change 
+<code>port = process.argv[2] || 8888;</code> to be <code>port = process.argv[2] || 80;</code> if you wanted it running on port 80 for instance!</p>
+
+<p>The application looks at the URL to determine the resource it is trying to get at. If the URL is a directory i.e. the root of the url <code>/</code> it will attempt to find an index.htm file to serve as the content.</p>
+
+<p>It will produce 404 errors on an inability to find a resource requested. Will also produce 500 errors if it fails to read a file because it is corrupt for instance.</p>
+
+<p>Uses the <a href="http://creattica.com/free-css-templates/simpletape-free-minimalistic-site-template/79129">SimpleTape</a> free html template theme as a demo.</p>
+
+<p>I use this on the go to demonstrate simple web pages to people, as I can turn any machine into a web server with simply a few clicks now.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">North-American-Octo-Hipster maintained by <a href="https://github.com/davidsivocha">davidsivocha</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
